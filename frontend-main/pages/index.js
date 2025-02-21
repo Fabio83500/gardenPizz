@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import gardenPizz from "@/public/assets/images/gardenPizz.png"
 import carte from "@/public/assets/images/carte.png"
 import logo1 from '@/public/assets/images/logo1.png'
@@ -12,6 +13,8 @@ import logo6 from '@/public/assets/images/logo6.png'
 import logo7 from '@/public/assets/images/logo7.png'
 import logo8 from '@/public/assets/images/logo8.png'
 import logo9 from '@/public/assets/images/logo9.png'
+import flyTel1 from '@/public/assets/images/flyTel1.png'
+import flyTel2 from '@/public/assets/images/flyTel2.png'
 export default function Home() {
 
   return (
@@ -23,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/engine.ico" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
       </Head>
-      <section id="accueil absolute">
+      <section id="accueil">
         <header className='py-2 px-4 lg:fixed lg:px-14 top-0 left-0 w-full flex justify-between items-center z-50'>
           <a href="/" class="nom">
             <Image src={gardenPizz} width={100} height={100} />
@@ -67,7 +70,9 @@ export default function Home() {
         <div className='max-w-7xl mx-auto'>
           <div id="carte" className=' mt-20'>
             <h2 className='text-4xl text-center text-[#EC5F34] mb-5 underline'>NOTRE CARTE</h2>
-            <Image src={carte} />
+            <Image className='hidden lg:block' src={carte} />
+            <Image className='lg:hidden' src={flyTel1} />
+            <Image className='lg:hidden' src={flyTel2} />
           </div>
           <div className='px-4 md:px-8 lg:px-0 mt-20'>
             <h2 className='text-4xl text-center text-[#EC5F34] mb-5 underline'>OU NOUS TROUVEZ</h2>
@@ -129,24 +134,35 @@ export default function Home() {
         </div>
 
 
-        <footer class=" bg-[#333] shadow-sm ">
-          <div class="w-full text-white max-w-screen-xl mx-auto p-4 md:py-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
-              <a href="#accueil" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <footer className=" bg-[#333] shadow-sm ">
+          <div className="w-full text-white max-w-screen-xl mx-auto p-4 md:py-8">
+            <div className="sm:flex sm:items-center sm:justify-between">
+              <a href="#accueil" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <Image src={gardenPizz} className='w-40' alt="Logo" />
               </a>
-              <ul class="flex flex-wrap space-x-10 items-center mb-6 text-sm font-medium text sm:mb-0 dark:text-gray-400">
+              <ul className="flex flex-wrap space-x-10 items-center mb-6 text-sm font-medium text sm:mb-0 dark:text-gray-400">
                 <li>
-                  <a href="#apropos" class="hover:underline me-4 md:me-6">A propos</a>
+                  <a href="#apropos" className="hover:underline me-4 md:me-6">A propos</a>
                 </li>
                 <li>
-                  <a href="#carte" class="hover:underline me-4 md:me-6">La carte</a>
+                  <a href="#carte" className="hover:underline me-4 md:me-6">La carte</a>
                 </li>
               </ul>
+              <div className='flex space-x-4 items-center '>
+                <Link href="https://www.facebook.com/p/Garden-Pizz-61550604661358/?locale=fr_FR">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill='white' x="0px" y="0px" width="30" height="30"
+                    viewBox="0 0 50 50">
+                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                  </svg></Link>
+                <Link href="https://www.facebook.com/p/Garden-Pizz-61550604661358/?locale=fr_FR">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill='white' x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                  </svg></Link>
+              </div>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm ">© 2025
-              <a href="#accueil" class="hover:underline"> GardenPizz </a>.Tous droits réservés .</span>
+            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span className="block text-sm ">© 2025
+              <a href="#accueil" className="hover:underline"> GardenPizz </a>.Tous droits réservés .</span>
           </div>
         </footer>
       </section>
