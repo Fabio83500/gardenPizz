@@ -38,10 +38,10 @@ export default function Home() {
           </ul>
         </header>
 
-
-        <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: `url('/assets/images/hero.png')` }}>
+        <div className="relative min-h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url('/assets/images/hero.png')` }}>
           {/* Superposition noire avec transparence */}
-          <div className="absolute inset-0 bg-black opacity-70"></div> {/* Ce div crée un filtre noir */}
+          <div className="absolute inset-0 bg-black opacity-80"></div> {/* Ce div crée un filtre noir */}
 
           <div class="flex px-4 md:px-8 lg:px-0 items-center text-center justify-center absolute inset-0 ">
             <div>
@@ -49,13 +49,13 @@ export default function Home() {
               <span className=' text-9xl text-[#1AF742] font-[Inspiration] '>
                 2=3
               </span>
-              <p className=' text-4xl'> <span className='text-[#7FFF00]'>Pour deux pizzas achetées,</span> <br />
-                <span className='text-[#EB3A3A]'>la troisieme est offerte</span></p>
+              <p className=' text-4xl'> <span className='text-[#1AF742]'>Pour deux pizzas achetées,</span> <br />
+                <span className='text-[#EC5F34]'>la troisieme est offerte</span></p>
               <div className='flex items-center justify-center mt-10'>
-
                 <a id="numTel" href="tel:07 68 78 18 26"
-                  class="shadow-none w-fit rounded-md border-none flex items-center space-x-2 text-sm px-4 py-2.5
-                   font-medium text-white bg-[#EC5F34] transition duration-150 ease-in-out">
+                  class="shadow-none w-fit rounded-md border-none flex items-center
+                   space-x-2 text-sm px-4 py-2.5
+                   font-medium text-white hover:bg-orange-600 bg-[#EC5F34] transition duration-150 ease-in-out">
                   <svg id="numTel" class="w-5 h-5 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                     <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"></path>
                   </svg>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
         <div className='max-w-7xl mx-auto'>
-          <div id="carte" className=' mt-20'>
+          <div id="carte" className=' mt-10'>
             <h2 className='text-4xl text-center text-[#EC5F34] mb-5 underline'>NOTRE CARTE</h2>
             <Image className='hidden lg:block' src={carte} />
             <Image className='lg:hidden' src={flyTel1} />
@@ -133,22 +133,25 @@ export default function Home() {
           </div>
         </div>
 
-
         <footer className=" bg-[#333] shadow-sm ">
           <div className="w-full text-white max-w-screen-xl mx-auto p-4 md:py-8">
             <div className="sm:flex sm:items-center sm:justify-between">
               <a href="#accueil" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <Image src={gardenPizz} className='w-40' alt="Logo" />
               </a>
-              <ul className="flex flex-wrap space-x-10 items-center mb-6 text-sm font-medium text sm:mb-0 dark:text-gray-400">
+              <ul className="font-medium text sm:mb-0 dark:text-gray-400">
                 <li>
-                  <a href="#apropos" className="hover:underline me-4 md:me-6">A propos</a>
+                  <a href="/#apropos" className="hover:underline me-4 md:me-6">A propos</a>
                 </li>
                 <li>
-                  <a href="#carte" className="hover:underline me-4 md:me-6">La carte</a>
+                  <a href="/#carte" className="hover:underline me-4 md:me-6">La carte</a>
+                </li>
+                <li>
+                  <a href="/mentions-legales" className="hover:underline me-4 md:me-6">Mention légales</a>
                 </li>
               </ul>
-              <div className='flex space-x-4 items-center '>
+            </div>
+            <div className='flex space-x-4 items-center justify-center '>
                 <Link href="https://www.facebook.com/p/Garden-Pizz-61550604661358/?locale=fr_FR">
                   <svg xmlns="http://www.w3.org/2000/svg" fill='white' x="0px" y="0px" width="30" height="30"
                     viewBox="0 0 50 50">
@@ -159,7 +162,6 @@ export default function Home() {
                     <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
                   </svg></Link>
               </div>
-            </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <span className="block text-sm ">© 2025
               <a href="#accueil" className="hover:underline"> GardenPizz </a>.Tous droits réservés .</span>
