@@ -12,7 +12,7 @@ export default function layout() {
                 <div className="absolute inset-0 bg-black opacity-80"></div> {/* Ce div crée un filtre noir */}
                 <div className=" flex flex-col px-4 md:px-8 lg:px-0 items-center text-center justify-center absolute inset-0 ">
                     <Image src={hero2} quality={90} priority alt='logo hero garden pizz '
-                        className='object-contain 2xl:w-[40rem] w-[27rem] h-full' />
+                        className='object-contain 2xl:w-[40rem] w-[27rem] h-full ' />
                     <div class="flex mb-20 items-center justify-center ">
                         <a id="numTel" href="tel:07 68 78 18 26"
                             class="shadow-none w-fit rounded-md border-none flex items-center space-x-2 text-sm px-4 py-2.5
