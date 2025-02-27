@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function layout() {
     return (
         <div>
-            <div className="relative min-h-screen bg-cover bg-center"
+            <div className="relative min-h-screen bg-cover bg-center "
                 style={{ backgroundImage: `url('/assets/images/hero.png')` }}>
                 {/* Superposition noire avec transparence */}
                 <div className="absolute inset-0 bg-black opacity-80"></div> {/* Ce div crée un filtre noir */}
