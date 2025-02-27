@@ -10,7 +10,7 @@ export default function Header() {
                 <div className="container flex flex-row items-center justify-between mx-auto  max-w-7xl">
 
                     <Link href="/" className="">
-                        <Image src={gardenPizz} alt='logo gardenPizz' width="52" height="52" />
+                        <Image src={gardenPizz} width="52" height="52" />
                     </Link>
 
                     <nav className="top-0 left-0 z-0 flex items-center justify-end w-full h-full space-x-10 text-base ">

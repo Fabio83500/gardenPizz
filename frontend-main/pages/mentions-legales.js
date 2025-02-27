@@ -13,7 +13,7 @@ export default function mentionsLegales() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
       </Head>
       <header className='py-2 px-4 lg:fixed lg:px-14 top-0 left-0 w-full flex justify-between items-center z-50'>
-          <a href="/" className="nom">
+          <a href="/" class="nom">
             <Image src={gardenPizz} width={100} height={100} />
           </a>
           <ul className='flex space-x-10 items-center text-white '>
@@ -30,8 +30,8 @@ export default function mentionsLegales() {
                 SAS , immatriculée au RCS de
                 Six fours les plages sous le numéro 98190733000014.<br />
                 Siège social : 55 rue de l'Artisanat,
-                83140 Six-Fours-les-PlagesResponsable de la publication : Aurélie Egea Contact : aurelie_fedele@hotmail.fr
-                / 06 30 26 57 40
+                83140 Six-Fours-les-PlagesResponsable de la publication : Aurélie Fedele Contact : sarlegea@wanadoo.fr
+                / 07 68 78 18 26
             </p>
             <p className='mb-6'>
             <span className='underline block  font-medium text-xl'>2. Hébergement</span>
