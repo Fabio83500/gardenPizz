@@ -10,11 +10,8 @@ import Carroussel from "@/components/Caroussel/layout"
 import gardenPizz from "@/public/assets/images/gardenPizz.png"
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,24 +28,23 @@ export default function Home() {
       </Head>
 
       <section id="accueil">
-
         <nav className="bg-[#333] border-gray-200 dark:bg-gray-900 z-50 relative">
           <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image src={gardenPizz} alt='logo garden pizz' width={100} height={100} />
             </a>
             <button onClick={handleClick} className="md:hidden text-white">
-            {isOpen ? (
-    // Icône croix
-    <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  ) : (
-    // Icône burger
-    <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-    </svg>
-  )}
+              {isOpen ? (
+                // Icône croix
+                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                // Icône burger
+                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              )}
             </button>
             <div className='hidden md:block'>
               <ul className="flex space-x-10 items-center text-white ">
