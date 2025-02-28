@@ -9,14 +9,15 @@ import logo7 from '@/public/assets/images/logo7.png'
 import logo8 from '@/public/assets/images/logo8.png'
 import logo9 from '@/public/assets/images/logo9.png'
 import Image from 'next/image'
+
 export default function layout() {
   return (
-    <div className="my-20">
-    <div className="bg-[#EC5F34] overflow-hidden flex flex-col items-center  justify-center">
-      <h3 className="bg-black rounded-b-xl text-[#EC5F34] mb-6 px-4 py-2  text-center 
-      text-4xl w-fit">
-        NOS PARTENAIRES
+    <div className="">
+      <h3 className="text-4xl text-center text-[#EC5F34]  my-10">
+        Nos partenaires
       </h3>
+    <div className="bg-[#EC5F34] overflow-hidden flex flex-col items-center  justify-center">
+      
       {/* Conteneur de défilement */}
       <div className="flex animate-marquee py-10 space-x-24">
         {/* Répéter les images pour éviter le vide */}
