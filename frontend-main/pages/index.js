@@ -11,8 +11,6 @@ import gardenPizz from "@/public/assets/images/gardenPizz.png"
 
 export default function Home() {
 
-
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -26,6 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#EB3A3A"></meta>
         <link rel="icon" href="/engine.ico" />
+       
       </Head>
 
       <section id="accueil">
