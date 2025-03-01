@@ -12,9 +12,9 @@ export default function layout() {
                 {/* Superposition noire avec transparence */}
                 <div className="absolute inset-0 bg-black opacity-80"></div> {/* Ce div crée un filtre noir */}
                 <div className=" flex flex-col px-4 md:px-8 lg:px-0 items-center text-center justify-center absolute inset-0 ">
-                    <Image src={hero2} quality={90} priority alt='logo hero garden pizz '
-                        className='object-contain 2xl:w-[40rem] w-auto ' />
-                    <div className="flex mt-20 items-center justify-center ">
+                    <Image src={hero2}  quality={90} priority alt='logo hero garden pizz '
+                        className='object-contain 2xl:w-[40rem] xl:w-[30rem]  ' />
+                    <div className="flex items-center justify-center ">
                         <button
                          onClick={() => {
                             event({
