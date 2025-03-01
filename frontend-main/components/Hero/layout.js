@@ -15,7 +15,7 @@ export default function layout() {
                     <Image src={hero2}  quality={90} priority alt='logo hero garden pizz '
                         className='object-contain 2xl:w-[40rem] xl:w-[30rem]  ' />
                     <div className="flex items-center justify-center ">
-                        <button
+                        <a
                          onClick={() => {
                             event({
                               action: "call_button_click",
@@ -34,7 +34,7 @@ export default function layout() {
                                  0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 
                                  48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"></path>
                             </svg><span id="numTel" className="block text-xl">07 68 78 18 26</span>
-                        </button>
+                        </a>
                     </div>
                     <div className='hidden'>
                         <Image src={gardenPizz} alt='logo garden pizz' className='w-[40rem]' />
