@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import React, { useState } from 'react';
 import Image from 'next/image';
-
 import Hero from "@/components/Hero/layout"
 import Carte from "@/components/Carte/layout"
 import Localisation from "@/components/Localisation/layout"
@@ -24,9 +23,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#EB3A3A"></meta>
         <link rel="icon" href="/engine.ico" />
-       
       </Head>
-
+      
       <section id="accueil">
         <nav className="bg-[#333] z-50 relative">
           <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
@@ -65,6 +63,7 @@ export default function Home() {
         </nav>
 
         <Hero />
+
         <div className='max-w-7xl mx-auto'>
           <Carte />
           <Apropos />
