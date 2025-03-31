@@ -6,7 +6,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: theme("fontFamily.poppins");
+
 }
 html {
     scroll-behavior: smooth;
@@ -14,7 +15,6 @@ html {
   @media (max-width: 768px) {
    
   }
-
 
 
 /* page d'accueil*/

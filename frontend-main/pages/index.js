@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       
       <section id="accueil">
-        <nav className="bg-[#333] z-50 relative">
+        <nav className="bg-[#333] z-50 relative sticky top-0 shadow-lg">
           <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image src={gardenPizz} alt='logo garden pizz' width={100} height={100} />

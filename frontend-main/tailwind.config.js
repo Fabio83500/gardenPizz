@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+      },
       animation: {
         marquee: 'marquee 40s linear infinite', // Durée de l'animation
       },
