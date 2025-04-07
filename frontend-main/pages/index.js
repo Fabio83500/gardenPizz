@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
       
       <section id="accueil">
-        <nav className="bg-[#333] z-50 relative sticky top-0 shadow-lg">
+        <nav className="bg-[#131615] z-50 relative sticky top-0 shadow-lg">
           <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image src={gardenPizz} alt='logo garden pizz' width={100} height={100} />
@@ -54,7 +54,7 @@ export default function Home() {
               </ul>
             </div>
             {/* Menu Mobile */}
-            <div className={`${isOpen ? "block" : "hidden"} absolute top-16 left-0 w-full bg-[#333] 
+            <div className={`${isOpen ? "block" : "hidden"} absolute top-16 left-0 w-full bg-[#131615] 
       text-white md:hidden`}>
               <ul className="flex flex-col p-4 space-y-2">
                 <li><a href="/#carte" className="block py-2 px-3">La carte</a></li>

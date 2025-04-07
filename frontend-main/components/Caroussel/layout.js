@@ -13,11 +13,11 @@ import Image from 'next/image'
 export default function layout() {
   return (
     <div className="">
-      <h3 className="text-4xl text-center text-[#EC5F34]  my-10">
+      <h3 className="text-4xl text-center text-[#e53032]  my-10">
         Nos partenaires
       </h3>
       
-    <div className="bg-[#EC5F34] overflow-hidden flex flex-col items-center  justify-center">
+    <div className="bg-[#e53032] overflow-hidden flex flex-col items-center  justify-center">
       
       {/* Conteneur de défilement */}
       <div className="flex animate-marquee py-10 space-x-24">

@@ -4,7 +4,7 @@ export default function layout() {
   return (
     <div>
          <div id="apropos" className='px-4 md:px-8 lg:px-0'>
-            <h2 className='text-4xl text-center text-[#EC5F34] my-10 '>A propos de nous </h2>
+            <h2 className='text-4xl text-center text-[#e53032] my-10 '>A propos de nous </h2>
             <div className='flex items-center justify-center'>
               <p className='text-white text-xl text-center xl:px-20'>Bienvenue sur notre site ! Nous sommes une pizzeria située à Six-Fours-les-Plages, ouverte 7 jours
                 sur 7, où vous pouvez déguster nos délicieuses pizzas sur place ou profiter de notre service de

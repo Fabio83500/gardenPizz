@@ -11,7 +11,7 @@ export default function layout() {
     return (
         <div>
             <div id="carte" className='mt-10'>
-                <h2 className='text-4xl text-center text-[#EC5F34] mb-10 '>Notre carte</h2>
+                <h2 className='text-4xl text-center text-[#e53032] mb-10 '>Notre carte</h2>
                 <Image className='hidden lg:block rounded-xl' alt='la carte' width={9000} height={9000}
                  quality={99} src={newFly} />
                 <Image className='lg:hidden' alt='carte page 1' src={flyTel1} />

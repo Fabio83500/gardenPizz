@@ -25,8 +25,10 @@ export default function layout() {
                           }}
                         
                         id="numTel" href="tel:07 68 78 18 26"
-                            className="shadow-none w-fit mt-8 rounded-md border-none flex items-center space-x-2 text-sm px-4 py-2.5
-                         font-medium text-white hover:bg-orange-600 bg-[#EC5F34] transition duration-150 ease-in-out">
+                            className="shadow-none w-fit mt-8 rounded-md
+                             border-none flex items-center space-x-2 text-sm px-4 py-2.5
+                         font-medium text-white hover:bg-red-600 bg-[#e53032] transition
+                          duration-150 ease-in-out">
                             <svg id="numTel" className="w-5 h-5 text-white" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                                 <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14

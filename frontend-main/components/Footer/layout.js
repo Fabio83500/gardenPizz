@@ -6,7 +6,7 @@ import gardenPizz from '../../public/assets/images/gardenPizz.png'
 export default function Footer() {
     return (
         <>
-            <footer className=" bg-[#333] shadow-sm ">
+            <footer className=" bg-[#131615] shadow-sm ">
           <div className="w-full text-white max-w-screen-xl mx-auto p-4 md:py-8">
             <div className="sm:flex sm:items-center sm:justify-between">
               <a href="#accueil" className="flex justify-center items-center mb-4 sm:mb-0 space-x-3 ">
