@@ -1,10 +1,10 @@
 import React from 'react'
-import flyTel1 from "@/public/assets/images/flyTel1.png"
-import flyTel2 from "@/public/assets/images/flyTel2.png"
-import flyTel3 from "@/public/assets/images/flyTel3.png"
+import flyTel1 from "@/public/assets/images/flyTel1.webp"
+import flyTel2 from "@/public/assets/images/flyTel2.webp"
+import flyTel3 from "@/public/assets/images/flyTel3.webp"
 
 import Image from 'next/image'
-import newFly from "@/public/assets/images/newFly3.png"
+import newFly from "@/public/assets/images/carte.webp"
 
 
 export default function layout() {
