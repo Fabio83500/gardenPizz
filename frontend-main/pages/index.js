@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/engine.ico" />
       </Head>
       
-      <section id="accueil">
+      <section className='bg-gradient-to-br from-[#3b1f1a] via-[#2a1410] to-black' id="accueil">
         <nav className="bg-[#131615] z-50 relative sticky top-0 shadow-lg">
           <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -66,7 +66,7 @@ export default function Home() {
 
         <Hero />
 
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto '>
           <Carte />
           <Apropos />
           <Localisation />
