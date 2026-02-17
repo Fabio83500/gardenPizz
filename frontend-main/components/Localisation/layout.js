@@ -6,7 +6,7 @@ export default function layout() {
             <div className='px-4 md:px-8 lg:px-0'>
                     <h2 className="text-4xl font-bold text-[#e53032] text-center mt-16 tracking-wider">
                     Ou nous trouvez</h2>
-                <div className='md:flex space-x-14 items-center justify-center'>
+                <div className='md:flex md:space-x-14 items-center justify-center'>
                     <div className='md:w-1/2'>
                       <span className='text-white text-lg block text-center font-semiebold mb-4'>Garden Pizz Six fours </span>
                         <iframe

@@ -13,7 +13,7 @@ export default function layout() {
                 <div className=" flex flex-col px-4 md:px-8 lg:px-0 items-center text-center justify-center absolute inset-0 ">
                     <Image src={newLogoHero} width={2000} height={300} quality={90} priority alt='logo hero garden pizz '
                         className='object-contain 2xl:w-[40rem] xl:w-[30rem]  ' />
-                    <div className='flex items-center space-x-10'>
+                    <div className='md:flex items-center md:space-x-10'>
 
                         <div className="flex items-center justify-center ">
                             <a
