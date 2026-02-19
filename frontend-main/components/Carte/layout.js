@@ -64,13 +64,33 @@ export default function layout() {
                                     </div>
                                 ))}
                             </div>
+                            <h2 className="text-xl font-semibold text-white mt-12 mb-6">
+                                Softs
+                            </h2>
+
+                            <div className="space-y-3 text-sm">
+                                {[
+                                    ["Coca Zero, Oasis, Coca, Ice tea, Coca Cherry, Perrier, 7up, Orangina", "2€"],
+                                    ["Red Bull", "3€"],
+                                    ["Eau 50cl", "1€"],
+                                    ["Coca / Ice Tea 1,25L", "3,50€"],
+                                    ["Oasis 2L", "4€"],
+                                ].map((item, i) => (
+                                    <div key={i} className="flex justify-between border-b border-white/10 pb-2">
+                                        <span>{item[0]}</span>
+                                        <span className="font-semibold">{item[1]}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+
                         </div>
 
                         {/* ================================================= */}
                         {/* ================= SIGNATURES =================== */}
                         {/* ================================================= */}
                         <div>
-                             <div className='flex items-center  justify-between'>
+                            <div className='flex items-center  justify-between'>
 
                                 <h2 className="text-2xl font-semibold text-white">
                                     SIGNATURES
@@ -107,6 +127,26 @@ export default function layout() {
                                     </div>
                                 ))}
                             </div>
+
+
+                            <h2 className="text-xl font-semibold text-white mt-12 mb-6">
+                                Alcools
+                            </h2>
+
+                            <div className="space-y-3 text-sm">
+                                {[
+                                    ["Bière Heineken / Desperados 33cl", "3€"],
+                                    ["Vin du pays (peut remplacer la pizza offerte)", "8€"],
+                                    ["Côtes de Provence AOC", "12€"],
+                                    ["Syrah (peut remplacer la pizza offerte)", "9€"],
+                                    ["Côtes du Rhône AOC", "14€"],
+                                ].map((item, i) => (
+                                    <div key={i} className="flex justify-between border-b border-white/10 pb-2">
+                                        <span>{item[0]}</span>
+                                        <span className="font-semibold">{item[1]}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
                         {/* ================================================= */}
@@ -117,34 +157,34 @@ export default function layout() {
 
                             <div className="text-sm">
 
-                                 <div className='flex items-center  justify-between'>
-                                <h2 className="text-2xl font-semibold text-white">
-                                    
-                                </h2>
-                                <Image src={sixneuf} className='w-40' />
-                            </div>
-                            <div className="space-y-5 text-sm">
-                            
+                                <div className='flex items-center  justify-between'>
+                                    <h2 className="text-2xl font-semibold text-white">
 
-                                {[
-                                    ["Texane", "Sauce tomate, viande hachée, cheddar, tomates fraîches, sauce barbecue, emmental, mozza, origan", "15€"],
-                                    ["La Garden", "Huile d’olive, jambon cuit, chèvre, roquefort, emmental, mozza, origan", "15€"],
-                                    ["Camembert", "Crème fraîche, jambon cuit, camembert, emmental, mozza, origan", "15€"],
-                                    ["Burrata", "Sauce tomate, burrata, roquette, tomate cerise, basilic, balsamique, parmesan, jambon cru, origan", "15€"],
-                                    ["Burrata à la Truffe", "Sauce tomate, burrata truffe, roquette, tomate cerise, basilic, parmesan, jambon cuit, huile de truffe, origan", "16€"],
-                                    ["L’Artichaut", "Crème d’artichaut, artichaut, lardons, pommes de terre, champignons, emmental, mozza, origan", "16€"],
-                                    ["La Roma", "Sauce tomate, jambon cru, champignons, emmental, mozza, parmesan, roquette, tomates séchées, balsamique, origan", "16€"],
-                                ].map((pizza, i) => (
-                                    <div key={i} className="border-b border-white/10 pb-3">
-                                        <div className="flex justify-between font-semibold uppercase tracking-wide">
-                                            <span>{pizza[0]}</span>
-                                            <span>{pizza[2]}</span>
+                                    </h2>
+                                    <Image src={sixneuf} className='w-40' />
+                                </div>
+                                <div className="space-y-5 text-sm">
+
+
+                                    {[
+                                        ["Texane", "Sauce tomate, viande hachée, cheddar, tomates fraîches, sauce barbecue, emmental, mozza, origan", "15€"],
+                                        ["La Garden", "Huile d’olive, jambon cuit, chèvre, roquefort, emmental, mozza, origan", "15€"],
+                                        ["Camembert", "Crème fraîche, jambon cuit, camembert, emmental, mozza, origan", "15€"],
+                                        ["Burrata", "Sauce tomate, burrata, roquette, tomate cerise, basilic, balsamique, parmesan, jambon cru, origan", "15€"],
+                                        ["Burrata à la Truffe", "Sauce tomate, burrata truffe, roquette, tomate cerise, basilic, parmesan, jambon cuit, huile de truffe, origan", "16€"],
+                                        ["L’Artichaut", "Crème d’artichaut, artichaut, lardons, pommes de terre, champignons, emmental, mozza, origan", "16€"],
+                                        ["La Roma", "Sauce tomate, jambon cru, champignons, emmental, mozza, parmesan, roquette, tomates séchées, balsamique, origan", "16€"],
+                                    ].map((pizza, i) => (
+                                        <div key={i} className="border-b border-white/10 pb-3">
+                                            <div className="flex justify-between font-semibold uppercase tracking-wide">
+                                                <span>{pizza[0]}</span>
+                                                <span>{pizza[2]}</span>
+                                            </div>
+                                            <p className="text-gray-300 mt-1 normal-case">
+                                                {pizza[1]}
+                                            </p>
                                         </div>
-                                        <p className="text-gray-300 mt-1 normal-case">
-                                            {pizza[1]}
-                                        </p>
-                                    </div>
-                                ))}
+                                    ))}
                                 </div>
                             </div>
 
@@ -182,6 +222,25 @@ export default function layout() {
                                     ["Viandes", "2€"],
                                     ["Burrata", "4€"],
                                     ["Burrata truffe", "5€"],
+                                ].map((item, i) => (
+                                    <div key={i} className="flex justify-between border-b border-white/10 pb-2">
+                                        <span>{item[0]}</span>
+                                        <span className="font-semibold">{item[1]}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+
+                            <h2 className="text-xl font-semibold text-white mt-12 mb-6">
+                                Desserts
+                            </h2>
+
+                            <div className="space-y-3 text-sm">
+                                {[
+                                    ["Pizza Nutella", "11€"],
+                                    ["Supplément Smarties", "1€"],
+                                    ["Supplément Coco", "1€"],
+                                    ["Tiramisu (classique, spéculos…)", "4€"],
                                 ].map((item, i) => (
                                     <div key={i} className="flex justify-between border-b border-white/10 pb-2">
                                         <span>{item[0]}</span>

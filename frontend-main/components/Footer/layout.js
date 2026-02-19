@@ -43,7 +43,7 @@ export default function Footer() {
               </Link>
             </span>
 
-            <span className="block text-sm ">© 2025
+            <span className="block text-sm ">© 2026
               <a href="#accueil" className="hover:underline"> GardenPizz </a>.Tous droits réservés .</span>
           </div>
         </div>
