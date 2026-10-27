@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="order-2 lg:order-1">
           <m.p {...fadeUp(0.1)} className="flex flex-wrap items-center gap-x-3 gap-y-1 font-display text-base font-bold uppercase tracking-[0.25em] text-garden-gold">
             <span className="tricolore h-1 w-8 rounded-full" aria-hidden="true" />
-            Six-Fours · Mar Vivo · 7j/7
+            Six-Fours · Mar Vivo · Le soir dès 18h
           </m.p>
 
           <m.h1 {...fadeUp(0.2)} id="hero-title" className="mt-5 font-display text-6xl font-extrabold uppercase italic leading-[0.9] text-garden-cream sm:text-7xl xl:text-8xl">
@@ -51,7 +51,7 @@ export default function Hero() {
           </m.h1>
 
           <m.p {...fadeUp(0.3)} className="mt-6 max-w-xl text-lg text-garden-muted">
-            Deux pizzerias dans le Var, ouvertes 7 jours sur 7. Sur place, à emporter ou en livraison, avec l’offre{" "}
+            Deux pizzerias dans le Var, ouvertes tous les soirs dès 18h. Sur place, à emporter ou en livraison, avec l’offre{" "}
             <span className="font-brush text-2xl text-garden-red">2=3</span> sur toute la carte.
           </m.p>
 

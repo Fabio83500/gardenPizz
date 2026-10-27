@@ -1,11 +1,12 @@
-import { HOURS } from "@/data/site";
 import { RESTAURANTS } from "@/data/restaurants";
 import CallButton from "./CallButton";
-import Hexagon from "./Hexagon";
-import { ArrowIcon, ClockIcon, ScooterIcon } from "./Icons";
+import { ArrowIcon, ClockIcon, PinIcon, ScooterIcon } from "./Icons";
 import MapEmbed from "./MapEmbed";
 import Reveal from "./Reveal";
 import SectionTitle from "./SectionTitle";
+
+// "18:00" -> "18h", "22:30" -> "22h30"
+const formatTime = (time) => time.replace(":00", "h").replace(":", "h");
 
 export default function Restaurants() {
   return (
@@ -13,24 +14,9 @@ export default function Restaurants() {
       <div className="hex-pattern absolute inset-0 opacity-[0.04]" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <SectionTitle id="pizzerias-title" eyebrow="Où nous trouver" title="Nos deux pizzerias">
-          Appelez la pizzeria la plus proche de chez vous pour commander, sur place, à emporter ou en livraison.
+          Ouvertes le soir, dès 18h. Appelez la pizzeria la plus proche de chez vous pour commander, sur place, à emporter ou en livraison.
         </SectionTitle>
 
-        <Reveal className="mx-auto mt-10 flex max-w-3xl flex-col items-stretch justify-center gap-3 sm:flex-row">
-          {HOURS.map((slot) => (
-            <div key={slot.label} className="flex flex-1 items-center gap-4 rounded-2xl border border-garden-line bg-garden-card/80 px-5 py-4">
-              <Hexagon className="h-12 w-12 shrink-0" fill="bg-garden-ink" border="bg-garden-gold">
-                <ClockIcon className="h-5 w-5 text-garden-gold" />
-              </Hexagon>
-              <div>
-                <p className="font-display text-xl font-extrabold uppercase italic text-garden-cream">
-                  {slot.label} · {slot.time}
-                </p>
-                <p className="text-sm text-garden-muted">{slot.days}</p>
-              </div>
-            </div>
-          ))}
-        </Reveal>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {RESTAURANTS.map((restaurant, index) => (
@@ -41,6 +27,30 @@ export default function Restaurants() {
               <a href={`tel:${restaurant.tel}`} className="mt-1 inline-block w-fit text-2xl font-semibold text-garden-cream hover:text-garden-gold">
                 {restaurant.phone}
               </a>
+
+              <p className="mt-4 flex items-start gap-2 text-garden-muted">
+                <PinIcon className="mt-0.5 h-5 w-5 shrink-0 text-garden-red" />
+                <span>
+                  {restaurant.address.street}, {restaurant.address.postalCode} {restaurant.address.locality}
+                </span>
+              </p>
+
+              <div className="mt-6">
+                <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-garden-muted">
+                  <ClockIcon className="h-5 w-5 text-garden-red" />
+                  Horaires
+                </p>
+                <ul className="mt-3 divide-y divide-garden-line/60 rounded-2xl border border-garden-line bg-garden-ink/60 px-4">
+                  {restaurant.hours.map((slot) => (
+                    <li key={slot.label} className="flex items-baseline justify-between gap-4 py-2.5">
+                      <span className="text-garden-cream">{slot.label}</span>
+                      <span className={`font-display text-xl font-extrabold italic ${slot.closed ? "text-garden-muted" : "text-garden-gold"}`}>
+                        {slot.closed ? "Fermé" : `${formatTime(slot.opens)} – ${formatTime(slot.closes)}`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
               <div className="mt-6">
                 <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-garden-muted">

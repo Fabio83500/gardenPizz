@@ -1,4 +1,4 @@
-const WORDS = ["2 achetées = la 3e offerte", "4=6", "6=9", "Ouvert 7j/7", "Sur place", "À emporter", "En livraison"];
+const WORDS = ["2 achetées = la 3e offerte", "4=6", "6=9", "Tous les soirs dès 18h", "Sur place", "À emporter", "En livraison"];
 
 function Row({ hidden }) {
   return (

@@ -22,7 +22,17 @@ const jsonLd = {
     priceRange: "€",
     acceptsReservations: false,
     hasMenu: `${SITE_URL}/#carte`,
-    address: { "@type": "PostalAddress", addressLocality: restaurant.city, addressRegion: "Var", addressCountry: "FR" },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: restaurant.address.street,
+      postalCode: restaurant.address.postalCode,
+      addressLocality: restaurant.address.locality,
+      addressRegion: "Var",
+      addressCountry: "FR",
+    },
+    openingHoursSpecification: restaurant.hours
+      .filter((slot) => !slot.closed)
+      .map((slot) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: slot.days, opens: slot.opens, closes: slot.closes })),
     geo: { "@type": "GeoCoordinates", ...restaurant.geo },
     areaServed: restaurant.delivery,
     sameAs: SOCIALS.map((social) => social.href),
@@ -34,7 +44,7 @@ export default function Home() {
     <Layout>
       <Seo
         title="Garden Pizz | Pizzeria à Six-Fours-les-Plages et Mar Vivo · 2 achetées = la 3e offerte"
-        description="Garden Pizz, deux pizzerias à Six-Fours-les-Plages et Mar Vivo (La Seyne-sur-Mer). Ouvert 7j/7, sur place, à emporter ou en livraison. Deux pizzas achetées, la troisième offerte."
+        description="Garden Pizz, deux pizzerias à Six-Fours-les-Plages et Mar Vivo (La Seyne-sur-Mer). Ouvert le soir dès 18h, sur place, à emporter ou en livraison. Deux pizzas achetées, la troisième offerte."
         jsonLd={jsonLd}
       />
       <Hero />

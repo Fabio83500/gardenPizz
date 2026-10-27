@@ -6,7 +6,7 @@ import SectionTitle from "./SectionTitle";
 
 const STATS = [
   { value: 2, suffix: "", label: "pizzerias, à Six-Fours et Mar Vivo" },
-  { value: 7, suffix: "j/7", label: "ouvert toute la semaine" },
+  { value: 18, suffix: "h", label: "ouvert tous les soirs dès" },
   { value: PIZZA_COUNT, suffix: "", label: "recettes de pizzas et calzones" },
 ];
 
@@ -20,7 +20,7 @@ export default function About() {
             <p>
               Notre pizzeria vous accueille désormais dans deux établissements, pour encore plus de proximité et de
               gourmandise : l’un à <strong className="text-garden-cream">Six-Fours-les-Plages</strong>, l’autre à{" "}
-              <strong className="text-garden-cream">Mar Vivo</strong>. Ouverts 7 jours sur 7, nous vous proposons de
+              <strong className="text-garden-cream">Mar Vivo</strong>. Ouverts le soir dès 18h, nous vous proposons de
               déguster nos pizzas sur place ou de profiter de notre service de livraison selon votre secteur.
             </p>
             <p>
