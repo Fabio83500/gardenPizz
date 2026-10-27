@@ -1,25 +1,18 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import { GTM_ID } from "../lib/gtm";
-
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="fr">
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Inspiration:wght@400;700&display=swap" rel="stylesheet" />
+        <meta name="theme-color" content="#E53032" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <body>
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
